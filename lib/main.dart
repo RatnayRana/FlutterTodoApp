@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/NewFlutterProject.dart';
+import 'package:flutter_application_1/screen/NewHome.dart';
 import 'package:flutter_application_1/screen/UserHome.dart';
 // import './screen/Home.dart';
 // import './screen/ProductCart.dart';
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: UserHome(),
+      home: NewHome(),
     );
   }
 }

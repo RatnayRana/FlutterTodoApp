@@ -10,47 +10,36 @@ class UserHomeOne extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
+            margin: EdgeInsets.symmetric(horizontal: 23, vertical: 23),
+            width: 160,
+            child: Column(
+              children: [
+                RichText(
+                  text: TextSpan(
+                      text: "Dare to Innovate with ",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                      children: const <TextSpan>[
+                        TextSpan(
+                            text: 'Gofit',
+                            style: TextStyle(
+                                fontSize: 34,
+                                color: Colors.blue,
+                                fontWeight: FontWeight.bold))
+                      ]),
+                )
+              ],
+            ),
+          ),
+          Container(
+            width: 200,
+            padding: EdgeInsets.only(right: 78),
+            margin: EdgeInsets.only(top: 100),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  width: 180,
-                  child: Column(
-                    children: [
-                      RichText(
-                        text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: "Dare to innovate with ",
-                              style: TextStyle(
-                                  fontSize: 32, fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                              text: "Gofit",
-                              style: TextStyle(
-                                  fontSize: 32,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.blue), // Change color here
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(width: 60), // Add some space between text and icons
-                Container(
-                  margin: EdgeInsets.only(top: 80),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Icon(Icons.search),
-                      SizedBox(
-                          width: 10), // Add space between search and mic icon
-                      Icon(Icons.mic),
-                    ],
-                  ),
-                )
+                Icon(Icons.arrow_back),
+                Icon(Icons.arrow_forward),
               ],
             ),
           )
